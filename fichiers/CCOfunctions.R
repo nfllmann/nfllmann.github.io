@@ -1,25 +1,3 @@
-rm(list=ls())
-usePackage <- function(p) 
-{
-  if (!is.element(p, installed.packages()[,1]))
-    install.packages(p, dep = TRUE)
-  require(p, character.only = TRUE)
-}
-
-usePackage('DiceDesign')
-usePackage('DiceOptim')
-usePackage('DiceKriging') 
-usePackage('parallel') 
-usePackage('Rsolnp') 
-usePackage('nloptr') 
-
-library('DiceDesign')
-library('DiceOptim')
-library('DiceKriging')
-library("parallel")
-library("Rsolnp")
-library("nloptr")
-
 ########################################### 
 ########################################### Analytical test-cases
 ########################################### 
